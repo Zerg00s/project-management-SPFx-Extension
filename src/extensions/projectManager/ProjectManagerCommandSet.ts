@@ -99,23 +99,12 @@ export default class ProjectManagerCommandSet extends BaseListViewCommandSet<IPr
   }
 
   private _fetchProjectTemplates(): Promise<IProjectTemplate[]> {
-    const siteUrl = this.context.pageContext.web.absoluteUrl;
-    
-    // First try fetching by title
+    const endpoint = "/sites/ProjectsRepository/_api/web/GetFolderByServerRelativeUrl('ProjectTemplates')/Folders";
+  
     return this.context.spHttpClient.get(
-      `${siteUrl}/_api/web/lists/getByTitle('Project Templates')/items?$select=Title,FileRef,FileLeafRef&$filter=FSObjType eq 1`,
+      endpoint,
       SPHttpClient.configurations.v1
     )
-    .then((response: SPHttpClientResponse) => {
-      if (!response.ok) {
-        // If that fails, try by URL
-        return this.context.spHttpClient.get(
-          `${siteUrl}/_api/web/lists/getByUrl('ProjectTemplates')/items?$select=Title,FileRef,FileLeafRef&$filter=FSObjType eq 1`,
-          SPHttpClient.configurations.v1
-        );
-      }
-      return response;
-    })
     .then((response: SPHttpClientResponse) => {
       if (!response.ok) {
         throw new Error(`HTTP error: ${response.status} ${response.statusText}`);
@@ -123,9 +112,19 @@ export default class ProjectManagerCommandSet extends BaseListViewCommandSet<IPr
       return response.json();
     })
     .then((data: any) => {
-      return data.value as IProjectTemplate[];
+      // Map response to IProjectTemplate[]
+      // exclude Folders with "Forms" in the name
+      data.value = data.value.filter((item: any) => !item.Name.includes("Forms"));
+      // sort by name
+      data.value.sort((a: any, b: any) => a.Name.localeCompare(b.Name));
+      return data.value.map((item: any) => ({
+        Title: item.Name,
+        FileRef: item.ServerRelativeUrl,
+        FileLeafRef: item.Name
+      })) as IProjectTemplate[];
     });
   }
+  
 
   private async _createProjectPnP(template: IProjectTemplate, projectName: string): Promise<void> {
     try {
