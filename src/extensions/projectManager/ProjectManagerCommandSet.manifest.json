@@ -16,14 +16,9 @@
   "requiresCustomScript": false,
 
   "items": {
-    "COMMAND_1": {
-      "title": { "default": "Command One" },
-      "iconImageUrl": "icons/request.png",
-      "type": "command"
-    },
-    "COMMAND_2": {
-      "title": { "default": "Command Two" },
-      "iconImageUrl": "icons/cancel.png",
+    "CREATE_PROJECT": {
+      "title": { "default": "Create a project" },
+      "iconImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAHYAAAB2AH6XKZyAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABS5JREFUeJztml1sVEUUx/8zcz92u6XWLVhaslJUSFCJNEGqkRJjjIkPhBgjGMUHBKJEHiQY02IgJhrRJsYXjTFIa0wMSmIC8oghihot9Qv5EAKkhdJSRBZY27K79945PpRWu+7c3bI7Sxfv7+nunTPnnvnvnTNnZhcICAgICAgICPifwvIx6t86c67BsYIYzc7DPM5AnalK+jS27MyVAuPTTk4BBtpj6xmxNgDGRBwTcJQYHq979vSRa46uBPgKMNAeW8qI7SzAf4IIK6avPr27AB9a4X6NjNjmAv1XMYadA+2xV4jym26lRhnUwMe1EebYg8V6EAE7pOuurH+uf7hYPouB8g0QjnVTMR/EgGVCGN8NbJ05q5h+C0X5BpzfFquXYH0anjnMiL3DuLdHgvcW2zknSk7t7f2DvQo3H/vrIUApGAbwuSG9jTVr+s74GfomwTKmAsAzLhdd59pvvc3P8EYVYJTpIGz1M7jRBQCAh852NDSoGvOu7owQhxES4AabnAs6ACKAJMFNenCSNHIDAJfeHAA92frkFIAJhnC1CWFN1mFnwmCEOCyXcCXuQHoEImarrP0rQcZQES2nwf8DNxjCNRYY94/dVwArwsGN8hv8KFwA9hThb+PXaFT4dy4HzLCAIbhyIEoBbMOs5KJ8v/0xGMBCbJqqWZkERYRH9EQEOAD6PYm4HPkc5UC94DB1PRBUqWqZ0CFHoex3JL5IuehMSwxdXaJGiTCGJotjqSVwr1W6qVcSAQakxBuDLn50PKXNEBH2pjzsTXloMjlaKi3U5sjgxUB7JXjYlVh9KeU7+Ew6HYlVl5M47EqNkY2gVYA+SXgpkUaccttmEpfAhkQavfIaOk8AbQK4BLycSOEyZR/A/JombHtgFz5atBv3RBdmtUkQYWMiDQ/6RNAmwK6Ui25PHfj6OzejLjwDt4Tq8OLcTUq7k57E7mT+02eiaBNge9L/QGaaXTt2XRuu87X9JIevQtAiwHFPot/n258ofR7hpKcnIWpZBg84/w32rur5eHTGYzB59o1Z67w3AQAeudh3bg9+OP91hk/C7RrKAy0C/Jkx/qg9Fa83vgtbhJR9mmsfHrteXPsI1u1/Gj1/Hf+XTwmg+ApomQLDGZm/PhzzHXwmnHHEKmaOuzeoaSHQIkA0o4I7ljiE44nf8+5/eqgbP134fty9qZrStZYpMCNDAEc62NC1Enff3Igp5sjvLaNzfpQtB1sAAEPOIA5d+gVpmRrXXi/0KKBFgCaLQ4CNK2BccvFrvGvsc+u88X2+Ofel0p/BgCZTzwZJi6xVjGGh5e9aksx6nY0mQ2CKpn2RtkJobdjwdX7k8oGx66OJ35R2HMCaCn2bVm2e7zA4nggZ+ExRxW052IInG1YBYNjR06H0szxkYI6hb8+m9TxgXcRAjyfRmaUwupi6gPePtfn2v88UeCGi75wI0LwdFmBoq7KxxJ54AltiG3irytJ+YKH9RMgE0Fpp4X7TwwdXXJzKUdM3CIa1FRaacyTRYlGyM8EHbYHFtsDPjodv0xInPIkLV7Wo4cBswbHIFmg0eEl/sCzpoSgHsMAUWKBpTb8WlGKnpNS3CS8xjDFH1aYUgNKXTpHiOKvcIIdOqNqUAtSsiCc8hy7qCal0eGnppYbT+1TtvvnGTclN5f4SpIdkh99f83wFiC7vfs8Zdj8sRxGIgPSg+1XU7H7ezy6vLUZ8+6xmbvHXDIFZRGxy/62GgUjKszJJb1c/1b3jeocTEBAQEBAQEDBp+Rupl6pt9NQy2gAAAABJRU5ErkJggg==",
       "type": "command"
     }
   }

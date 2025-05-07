@@ -16,7 +16,13 @@
     "@microsoft/sp-core-library": "1.21.1",
     "@microsoft/decorators": "1.21.1",
     "@microsoft/sp-listview-extensibility": "1.21.1",
-    "@microsoft/sp-dialog": "1.21.1"
+    "@microsoft/sp-dialog": "1.21.1",
+    "@pnp/sp": "^3.12.1",
+    "@pnp/logging": "^3.12.1",
+    "@pnp/common": "^2.11.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "office-ui-fabric-react": "^7.199.1"
   },
   "devDependencies": {
     "@microsoft/rush-stack-compiler-5.3": "0.1.0",
