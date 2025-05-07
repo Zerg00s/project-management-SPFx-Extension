@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.16.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "project-management",
+    "libraryId": "8566c024-fbd1-4457-bd2b-41bed7151274",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "project-management",
+    "solutionShortDescription": "project-management description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ListViewCommandSet"
+  }
+}
