@@ -85,16 +85,19 @@ export default class ProjectManagerCommandSet extends BaseListViewCommandSet<IPr
     this._fetchProjectTemplates()
       .then((templates: IProjectTemplate[]) => {
         if (templates.length === 0) {
-          Dialog.alert('No project templates found. Please create templates in the ProjectTemplates library.');
+          // eslint-disable-next-line no-void
+          void Dialog.alert('No project templates found. Please create templates in the ProjectTemplates library.');
           return;
         }
 
         // Show the template panel
         const panel = new ProjectTemplatePanel(templates, this._createProjectPnP.bind(this));
-        panel.show();
+        // eslint-disable-next-line no-void
+        void panel.show();
       })
       .catch((error: Error) => {
-        Dialog.alert(`Error fetching project templates: ${error.message}`);
+        // eslint-disable-next-line no-void
+        void Dialog.alert(`Error fetching project templates: ${error.message}`);
       });
   }
 
