@@ -3,23 +3,23 @@
   "solution": {
     "name": "project-management-client-side-solution",
     "id": "8566c024-fbd1-4457-bd2b-41bed7151274",
-    "version": "1.0.0.0",
+    "version": "1.0.0.6",
     "includeClientSideAssets": true,
-    "skipFeatureDeployment": true,
+    "skipFeatureDeployment": false,
     "isDomainIsolated": false,
     "developer": {
-      "name": "",
-      "websiteUrl": "",
+      "name": "Denis Molodtsov",
+      "websiteUrl": "https://spdenis.com/",
       "privacyUrl": "",
       "termsOfUseUrl": "",
       "mpnId": "Undefined-1.21.1"
     },
     "metadata": {
       "shortDescription": {
-        "default": "project-management description"
+        "default": "project-management"
       },
       "longDescription": {
-        "default": "project-management description"
+        "default": "project-management"
       },
       "screenshotPaths": [],
       "videoUrl": "",

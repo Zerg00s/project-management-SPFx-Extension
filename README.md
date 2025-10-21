@@ -4,9 +4,21 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+SPFX extension that adds the "Create a project" button to the command bar of a document library. This button allows users to create a new project site directly from the document library interface, streamlining project management and collaboration within SharePoint. The button is only available in the document library called "Projects". This can be changed in the code as needed.
 
-[picture of the solution in action, if possible]
+The project folders are copied based on the document library called "Project Templates". Each folder there is a project template that can be used to create a new project folder. The entire structure of the template folder is copied to the new project folder, including all subfolders and files.
+
+When a user clicks the "Create a project" button, a dialog box appears prompting them to enter the name of the new project. Once the user submits the form, a new folder is created in the "Projects" document library with the specified name, and the contents of the selected template folder are copied into it.
+
+## Screenshots
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
 
 ## Used SharePoint Framework Version
 
@@ -21,7 +33,7 @@ Short summary on functionality and used technologies.
 
 ## Prerequisites
 
-> Any special pre-requisites?
+> Node.js v22.14.0
 
 ## Solution
 
@@ -50,18 +62,6 @@ Short summary on functionality and used technologies.
   - **npm install**
   - **gulp serve**
 
-> Include any additional steps as needed.
-
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
 > Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
 
 > Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
@@ -73,3 +73,24 @@ This extension illustrates the following concepts:
 - [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+
+## Build the project
+
+```cmd
+gulp clean ; gulp bundle --ship ; gulp package-solution --ship
+```
+
+## Deploy the package
+
+- Create site collection app catalog if you don't have one already:
+
+```powershell
+Add-SPOSiteCollectionAppCatalog -Site https://contoso.sharepoint.com/sites/project_site_of_your_choice
+```
+- upload the generated .sppkg file from the `sharepoint/solution` folder to the site collection app catalog's "Apps for SharePoint" library
+
+![alt text](image-4.png)
+
+- Site contents -> Add an app -> select the  app
+
+![alt text](image-5.png)

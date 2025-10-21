@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!-- Custom Action for Lists -->
     <CustomAction
         Title="ProjectManager"
         RegistrationId="100"
+        RegistrationType="List"
+        Location="ClientSideExtension.ListViewCommandSet.CommandBar"
+        ClientSideComponentId="4931b98a-cfa0-423a-95e3-d76ac877c1ae"
+        ClientSideComponentProperties="{&quot;sampleTextOne&quot;:&quot;One item is selected in the list.&quot;, &quot;sampleTextTwo&quot;:&quot;This command is always visible.&quot;}">
+    </CustomAction>
+
+    <!-- Custom Action for Document Libraries -->
+    <CustomAction
+        Title="ProjectManager"
+        RegistrationId="101"
         RegistrationType="List"
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
         ClientSideComponentId="4931b98a-cfa0-423a-95e3-d76ac877c1ae"
