@@ -63,7 +63,7 @@ export default class ProjectManagerCommandSet extends BaseListViewCommandSet<IPr
         isProjectsLibrary = 
           (listTitle === 'Projects') || 
           (listUrl.indexOf('/Projects') > -1 && listUrl.indexOf('/Projects') === listUrl.length - '/Projects'.length) || 
-          (listUrl.indexOf('/sites/ProjectsRepository/Projects') > -1);
+          (listUrl.indexOf('/sites/ProjectsRepository-DEV/Projects') > -1);
       }
       
       createProjectCommand.visible = isProjectsLibrary;
@@ -102,7 +102,7 @@ export default class ProjectManagerCommandSet extends BaseListViewCommandSet<IPr
   }
 
   private _fetchProjectTemplates(): Promise<IProjectTemplate[]> {
-    const endpoint = "/sites/ProjectsRepository/_api/web/GetFolderByServerRelativeUrl('ProjectTemplates')/Folders";
+    const endpoint = "/sites/ProjectsRepository-DEV/_api/web/GetFolderByServerRelativeUrl('ProjectTemplates')/Folders";
   
     return this.context.spHttpClient.get(
       endpoint,
@@ -133,7 +133,7 @@ export default class ProjectManagerCommandSet extends BaseListViewCommandSet<IPr
     try {
       // Get the correct server relative URL paths
       const sourceUrl = template.FileRef;  // This is already server-relative
-      const destinationUrl = `/sites/ProjectsRepository/Projects/${projectName}`;
+      const destinationUrl = `/sites/ProjectsRepository-DEV/Projects/${projectName}`;
       
       console.log('Source path:', sourceUrl);
       console.log('Destination path:', destinationUrl);
