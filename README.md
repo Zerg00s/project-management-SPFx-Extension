@@ -36,7 +36,8 @@ When a user clicks the "Create a project" button, a dialog box appears prompting
 > Node.js v22.14.0
 > Create 2 document libraries in your SharePoint site:
 > - "Projects" - where new project folders will be created
-> - "Project Templates" - where project templates are stored as folders
+> - "Project Templates" - where project templates are stored as folders.
+> Populate the "Project Templates" document library with folders representing different project templates. Each folder can contain subfolders and files that will be copied to new project folders.
 
 ## Minimal Path to Awesome
 
@@ -66,6 +67,10 @@ Add-SPOSiteCollectionAppCatalog -Site https://contoso.sharepoint.com/sites/proje
 - Site contents -> Add an app -> select the  app
 
 ![alt text](image-5.png)
+
+- Navigate to the Projects document library and test the "Create a project" button
+
+- Done!
 
 
 ## References
