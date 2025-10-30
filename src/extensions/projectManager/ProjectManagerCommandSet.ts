@@ -74,10 +74,10 @@ export default class ProjectManagerCommandSet extends BaseListViewCommandSet<IPr
   }
 
   private _startEmptyFolderCheck(): void {
-    // Check every 15 seconds
+    // Check every 2 seconds
     this._checkInterval = window.setInterval(() => {
       this._checkCurrentFolder();
-    }, 15000);
+    }, 2000);
   }
 
   private async _checkCurrentFolder(): Promise<void> {
