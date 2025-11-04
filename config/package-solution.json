@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "project-management-client-side-solution",
-    "id": "8566c024-fbd1-4457-bd2b-41bed7151274",
-    "version": "1.0.0.10",
+    "name": "Project Templates",
+    "id": "8566c024-fbd1-4457-bd2b-41bed7151275",
+    "version": "1.0.2.5",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": false,
     "isDomainIsolated": false,
@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "project-management"
+        "default": "Copies project templates based on folder structure."
       },
       "longDescription": {
-        "default": "project-management"
+        "default": "Copies project templates based on folder structure."
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,8 +27,8 @@
     },
     "features": [
       {
-        "title": "Application Extension - Deployment of custom action",
-        "description": "Deploys a custom action with ClientSideComponentId association",
+        "title": "Project Templates - Deployment of custom action",
+        "description": "Deploys an SPFx application customizer that provisions project templates based on folder structure.",
         "id": "91bddc9e-ad47-4d04-a942-6bf897fd1929",
         "version": "1.0.0.0",
         "assets": {
@@ -41,6 +41,6 @@
     ]
   },
   "paths": {
-    "zippedPackage": "solution/project-management.sppkg"
+    "zippedPackage": "solution/project-templates.sppkg"
   }
 }

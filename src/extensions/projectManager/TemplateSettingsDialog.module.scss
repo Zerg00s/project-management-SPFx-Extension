@@ -1,0 +1,58 @@
+// Global styles to override Microsoft's dialog width bug
+:global {
+  // .ms-Dialog-main {
+  //   min-width: 800px !important;
+  //   width: 900px !important;
+  //   max-width: 90vw !important;
+  // }
+
+  // .ms-Dialog-inner {
+  //   min-width: 800px !important;
+  // }
+
+  // // Target the actual dialog container with higher specificity
+  // div[role="dialog"] .ms-Dialog-main {
+  //   min-width: 800px !important;
+  //   width: 900px !important;
+  // }
+}
+
+// Container class for additional specificity
+.dialogContainer {
+    min-width: 800px !important;
+    width: 900px !important;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.pulsingArrow {
+  animation: pulse 2s infinite;
+}
+
+.sectionContainer {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  background-color: #fafafa;
+}
+
+.sourceSection {
+  border-left: 3px solid #0078d4;
+}
+
+.targetSection {
+  border-left: 3px solid #107c10;
+}

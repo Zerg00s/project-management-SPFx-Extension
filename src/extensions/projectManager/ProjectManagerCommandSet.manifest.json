@@ -9,5 +9,10 @@
   "manifestVersion": 2,
   "requiresCustomScript": false,
   "items": {
+    "TEMPLATE_SETTINGS": {
+      "title": { "default": "Template Settings" },
+      "iconImageUrl": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23333' d='M8 1.5a1.5 1.5 0 0 0-1.5 1.5v.5H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H9.5V3A1.5 1.5 0 0 0 8 1.5zm-.5 1.5a.5.5 0 0 1 1 0v.5h-1V3zm-4 2h9v8h-9v-8zm2 2v1h5v-1h-5zm0 2v1h5v-1h-5z'/%3E%3C/svg%3E",
+      "type": "command"
+    }
   }
 }

@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://gocleverpointcom.sharepoint.com/sites/ProjectsRepository/Shared Documents/Forms/AllItems.aspx",
+      "pageUrl": "https://gocleverpointcom.sharepoint.com/sites/ProjectsRepository/ProjectDocs/Forms/AllItems.aspx",
       "customActions": {
         "4931b98a-cfa0-423a-95e3-d76ac877c1ae": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
